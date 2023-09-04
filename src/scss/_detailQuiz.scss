@@ -1,0 +1,102 @@
+.detail-quiz-container {
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+
+    .left-content {
+        border: 2px solid #ccc;
+        width: 70%;
+        border-radius: 5px;
+        padding: 20px;
+
+        .title {
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        .q-body {
+            text-align: center;
+
+            img {
+                width: 200px;
+                height: 100px;
+                object-fit: cover;
+            }
+        }
+
+        .q-content {
+
+            .question {
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+
+        .q-footer {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+
+            .btn {
+                width: 100px;
+            }
+        }
+    }
+
+    .right-content {
+        border: 2px solid #ccc;
+        width: 30%;
+        border-radius: 5px;
+        padding: 20px;
+
+        .main-timer {
+            border-bottom: 1px dashed;
+            padding-bottom: 35px;
+            text-align: center;
+            padding-top: 10px;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .main-question {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            .question {
+                border: 1px solid #878787;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                &:hover {
+                    color: red;
+                }
+
+                &.selected {
+                    background-color: #c6c6c6;
+                }
+
+                &.clicked {
+                    background-color: #8d7676;
+                }
+            }
+
+        }
+    }
+}
+
+.question {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.answer {
+    margin-left: 100px;
+    margin-top: 20px;
+}

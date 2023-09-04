@@ -1,0 +1,34 @@
+.admin-container {
+    max-width: 100vw;
+    background-image: linear-gradient(rgb(129, 116, 189), rgba(137, 126, 202, 0.445));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 700px;
+    padding-top: 120px;
+
+    .admin-content {
+        width: 100%;
+
+        .admin-main {
+            height: calc(100vh - 56px);
+        }
+    }
+}
+
+.check-qr-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .qr-camera {
+        video {
+            width: 600px;
+            border-radius: 20px;
+        }
+
+        border: 3px solid #000;
+        padding: 10px 10px 5px 10px;
+    }
+}

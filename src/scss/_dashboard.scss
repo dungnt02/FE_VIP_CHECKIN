@@ -1,0 +1,36 @@
+.satistic {
+    display: flex;
+    gap: 50px;
+    margin-left: 10px;
+    margin-top: 20px;
+
+    &>.satistic-card:first-child {
+        background-color: #71357b;
+    }
+
+    &>.satistic-card:nth-child(2) {
+        background-color: #95d0d4;
+    }
+
+    &>.satistic-card:last-child {
+        background-color: #fe7e51;
+    }
+
+    .satistic-card {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        text-align: center;
+
+        .total {
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 50px;
+            color: #fff;
+        }
+
+        .text {
+            color: white;
+        }
+    }
+}
